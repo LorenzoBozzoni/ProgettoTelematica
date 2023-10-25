@@ -1,0 +1,81 @@
+{
+  "manual": [
+    {
+      "commandName": "cd",
+      "description": "\nChange working directory.\nIt takes 1 argument corresponding the name of the folder you want to move to. To get the possibles folder names, type 'cd ?'\n"
+    },
+    {
+      "commandName": "clear",
+      "description": "\nClear the terminal.\nIt does not take any argument.\n"
+    },
+    {
+      "commandName": "view",
+      "description": "\nVisualize full content of a specific email.\nIt takes 1 argument corresponding the uid of the mail to visualize. To get a list of emails with theirs uids, use command 'show'\n"
+    },
+    {
+      "commandName": "show",
+      "description": "\nShow a list of emails.\nIt has two optional arguments:\n - A number that indicates the length of email list\n - And keyword 'top' or 'bottom' for showing from newest or oldest emails\nDefault values are 50 for the length and top for the order, the optional parameters can be in any order!\n"
+    },
+    {
+      "commandName": "files",
+      "description": "\nOpen the folder containing all attachments.\nIt does not take any argument.\n"
+    },
+    {
+      "commandName": "exit",
+      "description": "\nQuit from the IMAP client program.\nIt does not take any argument.\n"
+    },
+    {
+      "commandName": "delete",
+      "description": "\nDelete a specific mail.\nIt take 1 or more argument corresponding to the mails uids.\n"
+    },
+    {
+      "commandName": "stats",
+      "description": "\nLet you visualize statistical information regarding the mailbox by graphical tools.\nIt does take arguments:\n- spam: for visualizing percentage of spam emails\n- plot days/months/years: for visualizing the number of emails received in span of times.\n"
+    },
+    {
+      "commandName": "search",
+      "description": "\nLet you search with string criteria.\n It takes multiple arguments separated with a space character. Each argument is formatted in the following way: 'field:value'\nfor example 'from:Google subject:account'.\n The fields are 'from','subject' and 'body' depending on where to search.\nIt's case insensitive but does not search for partial results, i.e. the word has to be complete\n"
+    },
+    {
+      "commandName": "logout",
+      "description": "\nLogout from the current mailbox.\nIt does not take any argument\n"
+    },
+    {
+      "commandName": "permit",
+      "description": "\nPermits notifications of only certain mailboxes or mail objects.\nIt takes two arguments, the first is 'mailbox' or 'subject' depending on the category to permit.\nThe second is the mailbox or subject to permit itself. Once an element is permitted, all denied ones are removed.\nYou can just type 'permit all' to set both denying mask at null"
+    },
+    {
+      "commandName": "deny",
+      "description": "\nPermits notifications of only certain mailboxes or mail objects.\nIt takes two arguments, the first is 'mailbox' or 'subject' depending on the category to deny.\nThe second is the mailbox or subject to deny itself. Once an element is denied, all permitted ones are removed.\nYou can just type 'deny all' to set both denying mask at null"
+    },
+    {
+      "commandName": "listpermit",
+      "description": "\nList of the permitted mailboxes or mail objects.\nIt does not take any argument."
+    },
+    {
+      "commandName": "listdeny",
+      "description": "\nList of the denied mailboxes or mail objects.\nIt does not take any argument."
+    }
+  ],
+  "folders": [
+    { "alias": "inbox", "realName": "INBOX" },
+    { "alias": "starred", "realName": "[Gmail]/Starred" },
+    { "alias": "spam", "realName": "[Gmail]/Spam" },
+    { "alias": "important", "realName": "[Gmail]/Important" },
+    { "alias": "drafts", "realName": "[Gmail]/Drafts" },
+    { "alias": "sent", "realName": "'[Gmail]/Sent Mail'" },
+    { "alias": "bin", "realName": "[Gmail]/Bin" }
+  ],
+  "access": [
+    {
+      "user": "b'gAAAAABjENd-NpQD4T1j9uKLHyEP2fDL1SXbRGp75E3Swpzg4ZqaGA4sYyf3j5HIEC9I0YZGuBJfurXr91XuJOGs8CUU7-5x0kAvwfbTiijaWoDZLc_tkgc='",
+      "password": "b'gAAAAABjENd-xNviqVmgkvT_TNuReYhoKysDO686qrUv60LOcL1cIYwQX2AsyvJ_Cw887QutuIeAqw6MXuIgSXqVvRvLgn4xMBC7kYjK9atwi21uYi5dFDo='",
+      "accPassword": "b'\\xa5\\xa2\\xbbO\\r6\\xa75\\xdf\\x19RP\\xca\\xfb\\x9cx\\x0f\\xfb\\xa97\\\\|1\\xc3\\xd1\\x9b\\x80\\xc5\\xeb\\xf6\\x1f\\xfa'"
+    },
+    {
+      "user": "b'gAAAAABjENgzJgHGStov0KUcWfwOVDy8MwFRfFf_1A2eHjGt28WRciwKbbxyGAfW2n1tGq9-tN9i4FdazkA8aiCIQ2IUfRzzjg61Y2XZm9iVyy6EUqcfQn8='",
+      "password": "b'gAAAAABjENgz161_2wFadSwILY1eWzk3mq0A_NK5eXnUSv_qosv8wBQsI_o_yKmz1-sPegRNC0ybbwxLUDJTkt7FFqsg5er9xbekO3vAjqwegskTzsLtYTw='",
+      "accPassword": "b'r\\x97Q8\\xcbPl\\xba#\\xfcbo\\xfbEX<\\n\\xe9U\\x93\\xb6\"\\xf0\\x81O\\xe9\\xdb\\xf3\\xae\\xe1\\xb3\\xbc'"
+    }
+  ]
+}
